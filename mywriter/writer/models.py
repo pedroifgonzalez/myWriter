@@ -20,4 +20,4 @@ class Author(models.Model):
         return self.name
 
 
-__all__ = ['Writing', 'Author']# Register your models here.
+__all__ = ['Writing', 'Author']
