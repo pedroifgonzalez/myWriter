@@ -1,0 +1,17 @@
+#login{
+  width:20%;
+  align-items: baseline;
+  padding-top:8%;
+}
+
+input{
+  background-color:transparent;
+  text-align:center;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  outline: 0;
+  font-size: 16px;
+  font-family: "Courier New";
+  padding-top: 25px;
+}
