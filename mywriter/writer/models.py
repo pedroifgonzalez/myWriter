@@ -6,6 +6,7 @@ class Writing(models.Model):
     content = models.CharField(max_length=5000)
     creation_date = models.DateField(auto_now=True)
     modification_date = models.DateField()
+    author = models.ForeignKey('Author', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
@@ -13,9 +14,7 @@ class Writing(models.Model):
 class Author(models.Model):
 
     name = models.CharField(max_length=50)
-    nickname = models.CharField(max_length=20)
-    email = models.EmailField()
-    password = models.CharField(max_length=100)
+    nickname = models.CharField(max_length=20, null=True, blank=True)
 
     def __str__(self):
         return self.name
