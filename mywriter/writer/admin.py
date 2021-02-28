@@ -1,3 +1,5 @@
 from django.contrib import admin
+from writer.models import *
 
-# Register your models here.
+admin.site.register(Writing)
+admin.site.register(Author)
