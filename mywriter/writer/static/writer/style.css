@@ -4,6 +4,113 @@
   padding-top:8%;
 }
 
+#title {
+  text-align:center;
+  height: auto;
+  font-weight: bold;
+  resize: none;
+}
+
+#list{
+  height: 220px;
+  width:65%;
+  text-align: left;
+  line-height: 15px;
+  overflow: auto;
+}
+
+#help{
+  padding-top: 35px;
+}
+
+#guide{
+  width:65%;
+  line-height: 15px;
+  overflow: auto;
+}
+
+.tl{
+  text-align: left;
+  width: 95%;
+  transition: transform 0.5s;
+}
+
+#content {
+  height: 450px;
+  text-align: justify;
+  caret-color: green;
+  line-height: 28px;
+  min-width:200px;
+
+}
+
+#show_writings{
+  opacity: 0.2;
+  height: 50px;
+  text-align: justify;
+  caret-color: green;
+  line-height: 28px;
+  min-width:200px;
+}
+
+#search{
+  margin-top:-15px;
+  word-spacing:0px;
+}
+  
+#search img{
+  opacity:0.3;
+}
+
+.expanded-input{
+  width: 15%;
+  opacity: 1.0;
+}
+
+.collapsed-input{
+  width: 0;
+  opacity: 0;
+}
+
+.hidden_footer{
+  opacity: 0;
+}
+
+.show_footer{
+  opacity:1;
+}
+
+.show{
+  display: initial;
+}
+
+.hide{
+  display:none;
+}
+
+#items{
+  transition: opacity 1s;
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  width:70%;
+  transition: opacity 2s;
+}
+
+#info{
+  width: 15%;
+  cursor: auto;
+}
+
+#buttons{
+  width: 80%;
+  text-align: right;
+  padding: 12px;
+  align-items: baseline;
+}
+
 input{
   background-color:transparent;
   text-align:center;
@@ -14,4 +121,82 @@ input{
   font-size: 16px;
   font-family: "Courier New";
   padding-top: 25px;
+  transition: width 1s, opacity 1s;
+}
+
+a, a:visited, a:focus, a:active, a:link{
+  border: 0;
+  padding: 0px;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: color 0.5s;
+  text-decoration: none;
+  color:black;
+}
+  
+a:hover{
+  color:green;
+}
+
+body{
+  background-color: #FAFAFA;
+  font-size: 16px;
+  font-family: "Jetbrains";
+}
+
+textarea {
+  background-color: transparent;
+  width:70%;
+  border: 0px solid #ccc;
+  box-shadow: 0px 0px 0px #999;
+  font-size: 16px;
+  font-family: "Jetbrains";
+  padding: 10px;
+  resize:none;
+  box-sizing: border-box;
+  transition: height 0.8s, opacity 1s;
+}
+
+textarea:focus{
+  outline: 0;
+}
+
+input:focus{
+  outline: 0;
+}
+
+.button{
+  opacity: 0.2;
+  transition: opacity 0.5s;
+}
+
+.button:hover{
+  opacity:1.0
+}
+
+.writing-show{
+  width: 96%;
+  display: flex;
+  padding:8px;
+  margin:5px;
+  transition: background-color 0.5s;
+}
+
+.writing-show:hover{
+  background-color: lightgray;
+}
+
+#selected-writing{
+  background-color: lightgray;
+}
+
+#delete{
+  width: 5%;
+  text-align:right;
+}
+
+#del:hover{
+ color:red;
 }
