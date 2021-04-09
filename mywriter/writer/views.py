@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from writer.models import Writing
+from .models import Writing
 
 INTRODUCTION = 'Welcome to myWriter! A web app based on python framework Django \
                 and inspired by the online typewriter Writer. Designed to be simple \

@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="../static/writer/style.css">
 <link rel="icon" href="../static/writer/res/favicon.png" type="image/png" sizes="32x32">
 <center>
-    <form method="POST">
+    <form action="{% url 'showWritings' %}" method="post">
         {% csrf_token %}
     <div id="login">
      <img src="../static/writer/res/logo.png">
@@ -13,6 +13,7 @@
      <div id="password">
         <img src="../static/writer/res/password.png">
         <input name="password" type="password">
+        <input type="submit" value="Enter">
      </div>
      </div>
     </form>
