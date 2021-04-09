@@ -2,13 +2,13 @@
 <html>
    <title>MyWriter</title>
    <link rel="stylesheet" type="text/css" href="../static/writer/style.css">
-   <link rel="icon" href="../static/writer/res/favicon.png" type="image/png" sizes="32x32">
+   <link rel="icon" href="{% static 'writer/res/favicon.png' %}" type="image/png" sizes="32x32">
    <body>
       <center>
          <form action="{% url 'showWritings' %}" method="post">
             {% csrf_token %}
          <div id="login">
-         <img src="../static/writer/res/logo.png">
+         <img src="{% static 'writer/res/logo.png' %}">
          <div id="user">
             <img src="{% static 'writer/res/user.png' %}">
             <input name="author" type="text">
