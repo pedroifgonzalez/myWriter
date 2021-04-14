@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 class Writing(models.Model):
@@ -13,6 +14,7 @@ class Writing(models.Model):
 
 class Author(models.Model):
 
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     nickname = models.CharField(max_length=20, null=True, blank=True)
 
