@@ -1,1 +1,2 @@
-weasyprint==52.4
+django==2.2
+djangorestframework==3.12.4
