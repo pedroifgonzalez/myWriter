@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from writer.models import Writing
-from writer.api.serializers.srl_writing import WritingSerializer
+from writer.api.serializers import WritingSerializer
 
 
 class WritingViewSet(viewsets.ModelViewSet):
