@@ -6,7 +6,7 @@ class Writing(models.Model):
     title = models.CharField(max_length=100)
     content = models.CharField(max_length=5000)
     creation_date = models.DateField(auto_now=True)
-    modification_date = models.DateField()
+    modification_date = models.DateField(null=True)
     author = models.ForeignKey('Author', on_delete=models.CASCADE)
 
     def __str__(self):
