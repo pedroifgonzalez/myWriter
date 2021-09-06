@@ -1,0 +1,1 @@
+from .view_writing import WritingViewSet
