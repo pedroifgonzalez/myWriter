@@ -6,6 +6,7 @@ from writer.api import views
 
 router = routers.DefaultRouter()
 router.register(r'writings', views.WritingViewSet)
+router.register(r'authors', views.AuthorViewSet)
 
 urlpatterns = [
     path('', index, name='index'),
